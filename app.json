@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "NorthernStar",
+    "slug": "NorthernStar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "northernstar",
+    "userInterfaceStyle": "automatic",
+    "sdkVersion": "53.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone to enable voice conversations with the AI companion."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font",
+      "expo-audio",
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "OPENAI_API_KEY": "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",
+      "ELEVENLABS_API_KEY": "sk_4264d8de0076c57c2f56b3904a1bf682e25fff76f8304a48",
+      "ELEVENLABS_VOICE_ID": "Yg7C1g7suzNt5TisIqkZ",
+      "ELEVENLABS_AGENT_ID": "agent_3301k4gx0k17fabap8h3t182yaf6",
+      "router": {},
+      "eas": {
+        "projectId": "59af3fa7-93ba-4a60-9033-ce5c1be8c7c9"
+      }
+    }
+  }
+}
